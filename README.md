@@ -150,7 +150,7 @@ docker-compose up
 and you will have a postgresql db set up with the first DDL suggested above and populated with the result of the response.
 
 Also you can find a file out.csv in the root directory of the project with the results of the request and statistics.csv with the required statistics.
-There is a dashboard visualizing statistics which could be found here: [http://0.0.0.0:8080/](http://0.0.0.0:8080/)
+There is a dashboard visualizing statistics which could be found here: [http://localhost:8080/](http://localhost:8080/)
 
 There are two more ways to use this app without docker and with limited functionality:
 
