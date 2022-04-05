@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+
+  pgsql:
+    image: postgres
+    container_name: dash_pgsql
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+          # copy the sql script to create tables
+          - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+
+  dash:
+    build:
+      context: .
+      dockerfile: Dockerfile.dash
+    container_name: dash_dash
+    command: python dash_pipeline.py
+    volumes:
+      - .:/code
+    ports:
+      - "8080:8080"
+    depends_on:
+      - pgsql
