@@ -37,7 +37,7 @@ app = dash.Dash()
 app.layout = html.Div([
     dash_table.DataTable(df_out.to_dict('records'), [{"name": i, "id": i} for i in df_out.columns]),
     html.Br(),
-    dcc.Dropdown(ls_stats, id='pandas-dropdown'),
+    dcc.Dropdown(ls_stats, id='pandas-dropdown', value='entries_count'),
     dcc.Graph(id='map-graph')
 ])
 

@@ -6,7 +6,6 @@ from sqlalchemy import create_engine
 
 def get_data(url='https://randomuser.me/api/?results=300&nat=de,dk,fr,gb&inc=id,gender,name,location,email,dob,picture,nat&seed=flightright'):
     req = requests.request("GET", url)
-    print(req)
     json_dict = json.loads(req.text)
     df = pd.json_normalize(json_dict, 'results', sep='_')
 
