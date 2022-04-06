@@ -142,7 +142,7 @@ CREATE TABLE persons (
 ```
 
 ## The app
-This app is the dockerized so you can just install docker, clone this repository, perform
+This app is dockerized so you can just install docker, clone this repository, perform
 ```
 docker-compose build
 docker-compose up
