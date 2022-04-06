@@ -151,7 +151,7 @@ and you will have a postgresql db set up with the first DDL suggested above and 
 
 Also you can find a file out.csv in the root directory of the project with the results of the request and statistics.csv with the required statistics.
 There is a dashboard visualizing statistics which could be found here: [http://localhost:8080/](http://localhost:8080/)
-
+![Alt text](dasboard.jpg?raw=true "Optional Title")
 There are two more ways to use this app without docker and with limited functionality:
 
 You can clone the repo and perform 
