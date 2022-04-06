@@ -175,4 +175,4 @@ python pipe_line_workers.py
 ### The db
 - Add the ability to populate db with more data and add only new entries into the table (i.e. checking if the email is already stored in the db then skip this person).
 - If needed use the 3 table schema.
-- It is better and more secure to store the data on the separate db server.
+- It is better and more secure to store the data on the separate db server and put db credentials in the separate file.
