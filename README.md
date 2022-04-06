@@ -167,4 +167,12 @@ pip install -r requirements.txt
 python pipe_line_workers.py
 ```
 
-
+## What to could be improved
+### The app
+- Add some functionality to the app to be able to get more data (not just 300 entries), to get users from other countries and use other API parameters such as gender.
+- Add other visualization tools such as pivot table.
+- Right now the app getting the data right from the API. It might be better to split it into 2 processes: data loading to db, visualizing the data stored in db.
+### The db
+- Add the ability to populate db with more data and add only new entries into the table (i.e. checking if the email is already stored in the db then skip this person).
+- If needed use the 3 table schema.
+- It is better and more secure to store the data on the separate db server.
